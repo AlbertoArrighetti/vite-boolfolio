@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // components
-import ProjectList from './components/ProjectList.vue';
+import ProjectCard from './components/ProjectCard.vue';
 
 export default {
 
@@ -34,7 +34,7 @@ export default {
     },
 
     components: {
-        ProjectList,
+        ProjectCard,
     },
 
 }
@@ -45,8 +45,18 @@ export default {
     <h1>Hello</h1>
     <!-- Alan Item -->
 
-    <!-- content -->
-    <ProjectList></ProjectList>
+    <div>
+        <ul>
+
+            <ProjectCard 
+                v-for="project in projects" 
+                :card="project"
+            >
+
+            </ProjectCard>
+            
+        </ul>
+    </div>
 
 </template>
 

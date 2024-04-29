@@ -1,5 +1,5 @@
 <script>
-export default{
+export default {
       name:"ProjectCard",
 
       props:{
@@ -18,11 +18,9 @@ export default{
 
 <div class="">
        
-<ul>
-  <li v-for="card in cards">
+  <li>
     {{ card.title }}
   </li>
-</ul>
     
 </div>
 
