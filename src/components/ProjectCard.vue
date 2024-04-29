@@ -17,14 +17,13 @@ export default{
 <template>
 
 <div class="">
-        <!--Indico dove in uno specifico figlio verranno usati le variabili props-->
-        <img  :src="comImage" alt="">
-        <span>{{ comName }}</span>
-
-
-
- 
-      
+       
+<ul>
+  <li v-for="card in cards">
+    {{ card.title }}
+  </li>
+</ul>
+    
 </div>
 
 </template>
