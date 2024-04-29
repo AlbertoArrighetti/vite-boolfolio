@@ -7,13 +7,20 @@ export default {
     components: {
         ProjectCard,
     },
+
+    data() {
+        return {
+            projects: this.projects,
+        }
+    },
+
 }
 </script>
 
 <template>
     <div>
         <ul>
-            <ProjectCard v-for="project in projects">
+            <ProjectCard v-for="project in projects" :card="project">
 
             </ProjectCard>
         </ul>
