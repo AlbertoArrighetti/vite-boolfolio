@@ -3,8 +3,7 @@ export default{
       name:"ProjectCard",
 
       props:{
-        comName: String,
-        comImage: String
+        card: Object,
       },
 
     data(){
