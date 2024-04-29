@@ -2,6 +2,9 @@
 // chri
 import axios from 'axios';
 
+// components
+import ProjectList from './components/ProjectList.vue';
+
 export default {
 
     data() {
@@ -30,6 +33,10 @@ export default {
         
     },
 
+    components: {
+        ProjectList,
+    },
+
 }
 
 </script>
@@ -39,6 +46,7 @@ export default {
     <!-- Alan Item -->
 
     <!-- content -->
+    <ProjectList></ProjectList>
 
 </template>
 
