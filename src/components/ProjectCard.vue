@@ -18,8 +18,9 @@ export default {
 
 <div class="">
        
-  <li>
-    {{ card.title }}
+  <li class="py-3">
+     <span>{{ card.title }}</span>
+    <button type="button" class="btn btn-primary">show element</button>
   </li>
     
 </div>
