@@ -44,24 +44,38 @@ export default {
 </script>
 
 <template>
-    <h1>Hello</h1>
-    <!-- Alan Item -->
 
+<div class="container py-3">
+
+    
+    
+    <h1 class="text-center mb-2">Visualizza i nostri progetti</h1>
+    <!-- Alan Item -->
+    
     <div>
         <ul>
-
-            <ProjectCard 
-                v-for="project in projects" 
-                :card="project"
-            >
-
-            </ProjectCard>
             
+            <ProjectCard 
+            v-for="project in projects" 
+            :card="project"
+            >
+            
+            </ProjectCard>
+        
         </ul>
     </div>
+
+
+</div>
 
 </template>
 
 <style lang="scss">
-
+.container {
+    ul {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+    }
+}
 </style>
