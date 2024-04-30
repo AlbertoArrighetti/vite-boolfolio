@@ -42,22 +42,9 @@ export default {
 </script>
 
 <template>
-    <h1>Hello</h1>
-    <!-- Alan Item -->
-
-    <div>
-        <ul>
-
-            <ProjectCard 
-                v-for="project in projects" 
-                :card="project"
-            >
-
-            </ProjectCard>
-            
-        </ul>
+    <div class="container">
+        <router-view></router-view>
     </div>
-
 </template>
 
 <style lang="scss">
