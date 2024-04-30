@@ -40,11 +40,19 @@ export default {
 
 <template>
 
-    <div v-if="project">
-        <h2>
-            {{ project.title }}
-        </h2>
+    <div v-if="project" class="container py-5 fs-2">
+        <ul>
+            <li><strong>Project title : </strong>{{ project.title }}</li>
+            <li><strong>Project description : </strong>{{project.description}}</li>
+            <li><strong>Project type : </strong>{{project.type.name}}</li>
+            <li><strong>Project technologies : </strong>
+                <span v-for=" technology in project.technologies " class="badge rounded-pill text-bg-success">
+                    {{ technology.name}}
+                </span>
+            </li>
+        </ul>
     </div>
+
     <div v-else>
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
