@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // da decommentare 
 import HomePage from './pages/HomePage.vue';
-// import SingleProject from './pages/SingleProject.vue';
+import SingleProject from './pages/SingleProject.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -19,7 +19,7 @@ const router = createRouter({
         {
             path: '/projects/:id',
             name: 'single-project',
-            // component: SingleProject
+            component: SingleProject
         },
     ]
 });
