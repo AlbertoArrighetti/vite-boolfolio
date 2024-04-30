@@ -20,7 +20,8 @@ export default {
        
   <li class="py-3">
      <span>{{ card.title }}</span>
-    <button type="button" class="btn btn-primary">show element</button>
+     
+   <!-- <router-link :to="{name: 'single-post', params: {id: post.id}}"  class="btn btn-outline-info btn-outline">Mostra</router-link> -->
   </li>
     
 </div>
