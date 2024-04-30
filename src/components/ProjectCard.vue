@@ -22,13 +22,13 @@ export default {
 
     <div class="card">
 
-      <img :src="card.thumb" class="card-img-top" :alt="card.title">
+      <img :src="'http://localhost:8000' + card.thumb" class="card-img-top" :alt="card.title">
 
       <div class="card-body">
         <h5 class="card-title text-center mb-2">{{ card.title }}</h5>
 
-        <div class="d-flex">
-          <span v-for="technology in card.technologies"  class="badge rounded-pill px-3 py-2 my_badge">
+        <div class="d-flex gap-2 ">
+          <span v-for="technology in card.technologies"  class="badge rounded-pill px-3 py-2 my_badge text-black " :style="{'background-color': technology.color ?? 'rgba(255, 255, 255, 0.6)' }">
             {{ technology.name }}
           </span>
         </div>
