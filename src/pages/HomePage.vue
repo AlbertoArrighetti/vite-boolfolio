@@ -46,13 +46,8 @@ export default {
 
 <template>
 
-<div class="container py-3">
+<div class="container py-4">
 
-    
-    
-    <h1 class="text-center mb-2">Visualizza i nostri progetti</h1>
-    <!-- Alan Item -->
-    
     <div>
         <ul>
             
