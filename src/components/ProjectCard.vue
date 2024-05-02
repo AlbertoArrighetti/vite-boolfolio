@@ -35,7 +35,7 @@ export default {
 
         <p class="card-text">{{ card.description }}</p>
         
-        <router-link :to="{name: 'single-project', params: {id: card.id}}"  class="btn btn-outline-info btn-outline">Mostra</router-link>
+        <router-link :to="{name: 'single-project', params: {slug: card.slug}}"  class="btn btn-outline-info btn-outline">Mostra</router-link>
       </div>
     </div>
 
