@@ -1,15 +1,12 @@
 <script>
-
+import AppFooter from './components/AppFooter.vue';
 
 export default {
 
     data() {
 
         return {
-
-            
-
-            
+         
 
         }
 
@@ -27,6 +24,7 @@ export default {
 
     components: {
       
+        AppFooter,
     },
 
 }
@@ -36,6 +34,7 @@ export default {
 <template>
     <div class="container">
         <router-view></router-view>
+        <AppFooter></AppFooter>
     </div>
 </template>
 
