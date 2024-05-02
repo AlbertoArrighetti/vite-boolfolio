@@ -1,5 +1,6 @@
 <script>
 
+import AppHeader from './components/AppHeader.vue'
 
 export default {
 
@@ -7,17 +8,11 @@ export default {
 
         return {
 
-            
-
-            
-
         }
 
     },
 
     mounted() {
-              
-        
 
     },
 
@@ -26,7 +21,7 @@ export default {
     },
 
     components: {
-      
+        AppHeader,
     },
 
 }
@@ -34,6 +29,9 @@ export default {
 </script>
 
 <template>
+
+    <AppHeader></AppHeader>
+
     <div class="container">
         <router-view></router-view>
     </div>
