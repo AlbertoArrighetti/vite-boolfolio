@@ -11,25 +11,29 @@ export default {
 </script>
 
 <template>
+<footer>
 
-<div class="card text-center">
-  <div class="card-header">
-    FOOTER
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">Questo sito è stato realizzato con VUE + LARAVEL</p>
+    </div>
+    <div class="card-footer text-body-secondary">
+      copyright@2024
+    </div>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-body-secondary">
-    copyright@2024
-  </div>
-</div>
-
+  
+</footer>
 
 </template>
 
 <style lang="scss" scoped>
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 </style>
