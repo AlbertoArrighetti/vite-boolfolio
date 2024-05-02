@@ -8,16 +8,16 @@ export default {
     data() {
         return {
             project: null,
-            projectId: null,
+            projectSlug: null,
 
             apiBaseUrl: 'http://127.0.0.1:8000/api',
         }
     },
 
     mounted() {
-        this.projectId = this.$route.params.id;
+        this.projectSlug = this.$route.params.slug;
         
-        axios.get(this.apiBaseUrl + '/projects/' + this.projectId).then(res => {
+        axios.get(this.apiBaseUrl + '/projects/' + this.projectSlug).then(res => {
 
             console.log(res)
 
