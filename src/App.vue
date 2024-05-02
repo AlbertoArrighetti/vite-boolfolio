@@ -38,9 +38,9 @@ export default {
 
     <div class="container">
         <router-view></router-view>
-        <AppFooter></AppFooter>
+        
     </div>
-    
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
