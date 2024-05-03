@@ -22,7 +22,7 @@ export default {
 
     <div class="card">
 
-      <img :src="'http://localhost:8000' + card.thumb" class="card-img-top" :alt="card.title">
+      <img :src="'http://localhost:8000/storage' + card.thumb" class="card-img-top" :alt="card.title">
 
       <div class="card-body">
         <h5 class="card-title text-center mb-2">{{ card.title }}</h5>
