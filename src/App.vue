@@ -44,5 +44,7 @@ export default {
 </template>
 
 <style lang="scss">
-
+.container {
+    margin-bottom: 100px;
+}
 </style>
