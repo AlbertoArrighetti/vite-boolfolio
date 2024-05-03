@@ -37,6 +37,7 @@ export default {
     <AppHeader></AppHeader>
 
     <div class="container">
+        
         <router-view></router-view>
         
     </div>
