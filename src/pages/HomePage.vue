@@ -65,6 +65,10 @@ export default {
         
         </ul>
     </div>
+    <div class="col-auto d-flex justify-content-center ">
+        <router-link :to= "{name:'contattami'}">contattami</router-link>
+    </div>
+    
 
 
 </div>
