@@ -5,6 +5,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // da decommentare 
 import HomePage from './pages/HomePage.vue';
 import SingleProject from './pages/SingleProject.vue';
+import ContactMe from "./pages/ContactMe.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -21,6 +22,14 @@ const router = createRouter({
             name: 'single-project',
             component: SingleProject
         },
+        {
+            //route for call the page
+            path:'/contact-me',
+            //name of component
+            name:'contattami',
+            //import of the component
+            component: ContactMe
+        }
     ]
 });
 
